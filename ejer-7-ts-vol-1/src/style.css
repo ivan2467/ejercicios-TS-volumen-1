@@ -1,0 +1,5 @@
+@import "./components/form/form.css";
+
+root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
