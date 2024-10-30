@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1 - vol. 1</title>
+    <link rel="stylesheet" href="/public/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <form id="form">
+        <fieldset>
+          <legend>Usuario</legend>
+          <label>
+            <p>Nombre</p>
+            <input type="text" name="nombre" />
+          </label>
+          <label>
+            <p>Contraseña</p>
+            <input type="password" name="contraseña" />
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Datos de contacto</legend>
+          <label>
+            <p>Email</p>
+            <input type="email" name="email" />
+          </label>
+          <label>
+            <p>Número de teléfono</p>
+            <input
+              type="tel"
+              name="n_telefono"
+              pattern="[0-9]{3} [0-9]{2} [0-9]{2} [0-9]{2}"
+            />
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Ubicación</legend>
+          <label>
+            <p>País</p>
+            <select name="pais" id="pais">
+              <option value="" selected></option>
+              <option value="spain">España</option>
+              <option value="italy">Italia</option>
+              <option value="portugal">Portugal</option>
+              <option value="france">Francia</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Color favorito</legend>
+          <label>
+            <p>Rojo</p>
+            <input type="radio" name="color" value="rojo" />
+          </label>
+          <label>
+            <p>Verde</p>
+            <input type="radio" name="color" value="verde" />
+          </label>
+          <label>
+            <p>Azul</p>
+            <input type="radio" name="color" value="azul" />
+          </label>
+          <label>
+            <p>Amarillo</p>
+            <input type="radio" name="color" value="amarillo" />
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Edad</legend>
+          <label>
+            <div id="mostrar_edad"></div>
+            <input
+              type="range"
+              step="1"
+              size="100"
+              min="18"
+              name="selector_edad"
+              id="selector_edad"
+            />
+          </label>
+        </fieldset>
+        <input type="submit" value="Enviar" />
+      </form>
+      <section id="result"></section>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

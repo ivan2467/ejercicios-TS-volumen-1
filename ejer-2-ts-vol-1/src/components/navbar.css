@@ -1,0 +1,21 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  background-color: yellowgreen;
+  content: X;
+}
+
+.cerrar {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  padding-inline: 10px;
+}
+.cerrar:active {
+  background-color: brown;
+}

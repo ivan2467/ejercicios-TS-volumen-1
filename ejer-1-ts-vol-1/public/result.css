@@ -1,0 +1,23 @@
+#app {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  width: fit-content;
+  margin: auto;
+}
+
+#result {
+  background-color: sandybrown;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  visibility: hidden;
+
+  display: grid;
+  grid-template-columns: min-content min-content;
+  row-gap: 5px;
+  column-gap: 10px;
+
+  & :nth-child(2n - 1) {
+  }
+}

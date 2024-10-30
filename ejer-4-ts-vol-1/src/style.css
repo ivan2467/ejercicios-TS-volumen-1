@@ -1,0 +1,12 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section > div {
+  columns: 4;
+  column-width: 400px;
+
+  & > p:nth-of-type(1) {
+    margin-block-start: 0;
+  }
+}
